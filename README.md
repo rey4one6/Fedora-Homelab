@@ -864,20 +864,20 @@ systemctl --user status --failed         # Check for failed services
 🔗 Service URLs
 
 Service URL
-📊 Homarr http://192.168.0.666:7575
-📈 Uptime Kuma http://192.168.0.666:3001
-💾 Duplicati http://192.168.0.666:8200
-🎬 Jellyfin http://192.168.0.666:8096
-🎫 Jellyseerr http://192.168.0.666:5055
-🔍 Prowlarr http://192.168.0.666:9696
-📺 Sonarr http://192.168.0.666:8989
-🎥 Radarr http://192.168.0.666:7878
-🎭 Bazarr http://192.168.0.666:6767
-📥 SABnzbd http://192.168.0.666:8080
-⚙️ Profilarr http://192.168.0.666:6868
-📝 Memos http://192.168.0.666:5230
-♻️ Reclaimerr http://192.168.0.666:8282
-🖥️ Cockpit https://192.168.0.666:9090
+Homarr http://192.168.0.666:7575
+Uptime Kuma http://192.168.0.666:3001
+Duplicati http://192.168.0.666:8200
+Jellyfin http://192.168.0.666:8096
+Jellyseerr http://192.168.0.666:5055
+Prowlarr http://192.168.0.666:9696
+Sonarr http://192.168.0.666:8989
+Radarr http://192.168.0.666:7878
+Bazarr http://192.168.0.666:6767
+SABnzbd http://192.168.0.666:8080
+Profilarr http://192.168.0.666:6868
+Memos http://192.168.0.666:5230
+Reclaimerr http://192.168.0.666:8282
+Cockpit https://192.168.0.666:9090
 
 ---
 
