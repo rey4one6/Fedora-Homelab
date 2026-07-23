@@ -1,6 +1,5 @@
-🏠 Homelab Manual
-
-📦 Podman Compose on Fedora Server
+# 🏠 Homelab Manual
+## Podman Compose on Fedora Server
 
 ---
 
