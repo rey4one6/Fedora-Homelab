@@ -237,7 +237,7 @@ cat > ~/homelab-compose.yml << 'EOF'
 version: '3'
 
 services:
-  # 📊 Dashboard
+  # Dashboard
   homarr:
     image: ghcr.io/homarr-labs/homarr:latest
     container_name: homarr
@@ -250,7 +250,7 @@ services:
     volumes:
       - /mnt/docker/config/homarr:/appdata:Z
 
-  # 📈 Monitoring
+  # Monitoring
   uptime-kuma:
     image: docker.io/louislam/uptime-kuma:2
     container_name: uptime-kuma
@@ -260,7 +260,7 @@ services:
     volumes:
       - /mnt/docker/config/uptime-kuma:/app/data:Z
 
-  # 💾 Backup
+  # Backup
   duplicati:
     image: docker.io/duplicati/duplicati:latest
     container_name: duplicati
@@ -276,7 +276,7 @@ services:
       - /mnt/docker/config:/source/config:Z
       - /mnt/docker/backups:/backups:Z
 
-  # 🎬 Media Server
+  # Media Server
   jellyfin:
     image: docker.io/linuxserver/jellyfin:latest
     container_name: jellyfin
@@ -292,7 +292,7 @@ services:
     ports:
       - "8096:8096"
 
-  # 🎫 Media Requests
+  # Media Requests
   jellyseerr:
     image: docker.io/fallenbagel/jellyseerr:latest
     container_name: jellyseerr
@@ -305,7 +305,7 @@ services:
     ports:
       - "5055:5055"
 
-  # 🔍 Indexer Manager
+  # Indexer Manager
   prowlarr:
     image: docker.io/linuxserver/prowlarr:latest
     container_name: prowlarr
@@ -319,7 +319,7 @@ services:
     ports:
       - "9696:9696"
 
-  # 📺 TV Automation
+  # TV Automation
   sonarr:
     image: docker.io/linuxserver/sonarr:latest
     container_name: sonarr
@@ -335,7 +335,7 @@ services:
     ports:
       - "8989:8989"
 
-  # 🎥 Movie Automation
+  # Movie Automation
   radarr:
     image: docker.io/linuxserver/radarr:latest
     container_name: radarr
@@ -351,7 +351,7 @@ services:
     ports:
       - "7878:7878"
 
-  # 🎭 Subtitles
+  # Subtitles
   bazarr:
     image: docker.io/linuxserver/bazarr:latest
     container_name: bazarr
@@ -367,7 +367,7 @@ services:
     ports:
       - "6767:6767"
 
-  # 📥 Downloader
+  # Downloader
   sabnzbd:
     image: docker.io/linuxserver/sabnzbd:latest
     container_name: sabnzbd
@@ -382,7 +382,7 @@ services:
     ports:
       - "8080:8080"
 
-  # ⚙️ Profile Management
+  # Profile Management
   profilarr:
     image: ghcr.io/dictionarry-hub/profilarr:latest
     container_name: profilarr
@@ -404,7 +404,7 @@ services:
     container_name: profilarr-parser
     restart: unless-stopped
 
-  # 📝 Notes
+  # Notes
   memos:
     image: docker.io/neosmemo/memos:stable
     container_name: memos
@@ -416,7 +416,7 @@ services:
     volumes:
       - /mnt/docker/config/memos:/var/opt/memos:Z
 
-  # ♻️ Media Cleanup
+  # Media Cleanup
   reclaimerr:
     image: docker.io/fvboegeld/reclaimerr:dev
     container_name: reclaimerr
