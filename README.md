@@ -244,7 +244,7 @@ services:
     ports:
       - "7575:7575"
     environment:
-      TZ: America/Edmonton
+      TZ: America/Toronto
       SECRET_ENCRYPTION_KEY:
     volumes:
       - /mnt/docker/config/homarr:/appdata:Z
